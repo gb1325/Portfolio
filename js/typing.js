@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded',()=>{let e=document.querySelector('[data-typing]');if(!e)return;let words=['Frontend Developer','Computer Science Student','Problem Solver'],i=0,j=0,del=false;setInterval(()=>{e.textContent=words[i].slice(0,j);if(!del&&j++===words[i].length+5)del=true;if(del&&j--===0){del=false;i=(i+1)%words.length}},90)});

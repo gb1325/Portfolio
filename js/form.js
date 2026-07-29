@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded',()=>document.querySelector('form')?.addEventListener('submit',e=>{e.preventDefault();let f=e.currentTarget;if(!f.checkValidity())return f.reportValidity();let b=f.querySelector('button');b.textContent='✓ Message sent!';b.disabled=true;f.reset()}));
